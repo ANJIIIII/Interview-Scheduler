@@ -1,3 +1,4 @@
+
 # Interview Scheduler
 
 A full-stack web application for scheduling and managing interviews with Google Calendar integration and email notifications.
@@ -202,6 +203,9 @@ npm run test
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
 
+
+<img width="1888" height="856" alt="Screenshot 2025-08-08 122411" src="https://github.com/user-attachments/assets/c476f8c1-91e1-45f4-8900-72142c5d7c83" />
+<img width="1912" height="815" alt="Screenshot 2025-08-08 095831" src="https://github.com/user-attachments/assets/8513a218-8805-4316-84a5-4ea05d25bf96" />
 
 **Interview Scheduler - Streamlining Interview Management**
 
