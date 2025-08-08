@@ -1,0 +1,6 @@
+node_modules
+appsettings.json
+# Keep environment variables out of version control
+.env
+
+/generated/prisma
