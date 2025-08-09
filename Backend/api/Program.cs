@@ -1,4 +1,4 @@
-// Program.cs
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -6,17 +6,16 @@ using System.Text;
 using InterviewScheduler.API.Data;
 using InterviewScheduler.API.Services;
 
+// var builder = WebApplication.CreateBuilder(args);
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Database
-// builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
-//     new MySqlServerVersion(new Version(8, 0, 21))));
 
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
@@ -27,7 +26,7 @@ builder.Services.AddSwaggerGen();
 );
 
 
-// JWT Authentication
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -51,7 +50,7 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowReactApp",
+    options.AddPolicy("AllowVercel",
         policy =>
         {
             policy.WithOrigins("http://localhost:5173") // Your React app port
@@ -73,7 +72,7 @@ if (app.Environment.IsDevelopment())
 app.MapGet("/", () => "Hello Anjali, your .NET API is running!");
 
 app.UseHttpsRedirection();
-app.UseCors("AllowReactApp");
+app.UseCors("AllowVercel");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

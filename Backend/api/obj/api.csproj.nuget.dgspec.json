@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\Backend\\api\\api.csproj": {}
+    "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\backend\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\Backend\\api\\api.csproj": {
+    "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\backend\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\Backend\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\backend\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\Backend\\api\\api.csproj",
+        "projectPath": "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\backend\\api\\api.csproj",
         "packagesPath": "C:\\Users\\Anjali Mishra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\Backend\\api\\obj\\",
+        "outputPath": "C:\\Users\\Anjali Mishra\\Desktop\\InterviewSchedulerApp\\Interview-Scheduler\\backend\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
