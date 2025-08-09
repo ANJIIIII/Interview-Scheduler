@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from '../ui/Button';
 import Input from '../ui/Input';
-import Modal from '../ui/Modal';
+import Modal from '../ui/modal';
 
 const InterviewForm = ({ isOpen, onClose, onSubmit, initialData = null, loading = false }) => {
   const [formData, setFormData] = useState({
