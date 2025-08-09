@@ -53,7 +53,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowVercel",
         policy =>
         {
-            policy.WithOrigins("http://localhost:5173") // Your React app port
+            policy.WithOrigins("https://interview-scheduler-pi.vercel.app") // Your React app port
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials();
